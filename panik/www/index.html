@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <!--<link rel="stylesheet" href="css/index.css">-->
+        <title>Panik Rehberi</title>
+        <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <style>
+        .content{
+            text-align: center;
+   
+            margin: auto;
+        }
+
+    </style>
+    </head>
+    <body>
+        
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <div class="content">
+            <h1>Öncelikli olarak bilinmesi gereken acil durum numalaraları.</h1>
+    <a href="tel://112"><button class="btn btn-primary">112 - Acil Servis - Ambülans</button></a><hr>
+    <a href="tel://110"><button class="btn btn-primary">110 - Yangın</button></a><hr>
+    <a href="tel://156"><button class="btn btn-primary">156 - Jandarma İmdat</button></a><hr>
+    <a href="tel://155"><button class="btn btn-primary">155 - Polis İmdat</button></a><hr>
+    <a href="tel://154"><button class="btn btn-primary">154 - Alo Trafik</button></a><hr>
+    
+    <h1>Diğer Acil Durum Numaraları…</h1>
+    <a href="tel://114"><button class="btn btn-primary">114 - Ulusal Zehir Danışma Merkezi</button></a><hr>
+    <a href="tel://122"><button class="btn btn-primary">122 - Afet ve Acil Durum (AFAD) Çağrı Merkezi</button></a><hr>
+    <a href="tel://140"><button class="btn btn-primary">140 - Terör İhbar Hattı</button></a><hr>
+    <a href="tel://158"><button class="btn btn-primary">158 - Sahil Güvenlik İhbar ve Talep Hattı</button></a><hr>
+    <a href="tel://168"><button class="btn btn-primary">168 - Kızılay Bağış ve Danışma Hattı </button></a><hr>
+    <a href="tel://177"><button class="btn btn-primary">177 - Orman Yangını İhbar</button></a><hr>
+    <a href="tel://182"><button class="btn btn-primary">182 - Merkezi Hekim Randevu Sistemi</button></a><hr>
+    <a href="tel://183"><button class="btn btn-primary">183 - Sosyal Destek Hattı-Kadın ve Sosyal Hizmetler</button></a><hr>
+    <a href="tel://187"><button class="btn btn-primary">187 - Doğal Gaz Kaçak</button></a><hr>
+    <a href="tel://188"><button class="btn btn-primary">188 - Ambulans ve Cenaze Hattı</button></a><hr>
+    
+    <h1>Arıza Bildirim Numaraları</h1>
+    <a href="tel://101"><button class="btn btn-primary">101 - Arıza Takip Hattı</button></a><hr>
+    <a href="tel://102"><button class="btn btn-primary">102 - Arıza İhbar Hattı</button></a><hr>
+    <a href="tel://121"><button class="btn btn-primary">121 - Telefon Arıza Telefonu</button></a><hr>
+    <a href="tel://121"><button class="btn btn-primary">121 - Ankesör Arıza Telefonu</button></a><hr>
+    <a href="tel://121"><button class="btn btn-primary">121 - Teleks Arıza Telefonu</button></a><hr>
+    <a href="tel://121"><button class="btn btn-primary">121 - Data Arıza Telefonu</button></a><hr>
+    <a href="tel://125"><button class="btn btn-primary">125 - Radyo-Tv Arıza Telefonu</button></a><hr>
+    <a href="tel://126"><button class="btn btn-primary">126 - Kablo Tv Arıza Telefon</button></a><hr>
+    <a href="tel://185"><button class="btn btn-primary">185 - İSKİ (Su kesintisi sorgulama, arıza ve şikayet iletme vs.)</button></a><hr>
+    <a href="tel://186"><button class="btn btn-primary">186 - Elektrik Arıza Telefonu</button></a><hr>
+    <a href="tel://187"><button class="btn btn-primary">187 - Doğalgaz Arıza Telefonu</button></a><hr>
+
+    <h1>İhbar ve Şikayet Numaraları</h1>
+    <a href="tel://150"><button class="btn btn-primary">150 - BİMER</button></a><hr>
+    <a href="tel://153"><button class="btn btn-primary">153 - Zabıta Çağrı Merkezi Telefonu</button></a><hr>
+    <a href="tel://157"><button class="btn btn-primary">157 - İnsan Ticareti Mağdurları Acil Yardım ve İhbar Hattı</button></a><hr>
+    <a href="tel://178"><button class="btn btn-primary">178 - Alo RTÜK Telefonu</button></a><hr>
+    <a href="tel://184"><button class="btn btn-primary">184 - Sigara İhbar Hattı</button></a><hr>
+    <a href="tel://189"><button class="btn btn-primary">189 - Maliye İhbar Telefonu</button></a><hr>
+    <a href="tel://181"><button class="btn btn-primary">181 - Çevre ve Şehircilik Hattı (Alo Gürültü Şikayet Telefonu)</button></a><hr>
+    
+    <h1>Bilgi, Danışma ve Destek Numaraları</h1>
+    <a href="tel://119"><button class="btn btn-primary">119 - Posta Kodu Danışma</button></a><hr>
+    <a href="tel://171"><button class="btn btn-primary">171 - Sigara Bırakma Danışma Hattı</button></a><hr>
+    <a href="tel://174"><button class="btn btn-primary">174 - Gıda Hattı</button></a><hr>
+    <a href="tel://175"><button class="btn btn-primary">175 - Tüketici Danışma Hattı</button></a><hr>
+    <a href="tel://182"><button class="btn btn-primary">182 - Ruhsal Bunalım Danışma Hattı</button></a><hr>
+    <a href="tel://184"><button class="btn btn-primary">184 - Sağlık Danışma Hattı</button></a><hr>
+    <a href="tel://191"><button class="btn btn-primary">191 - Uyuşturucu ile Mücadele Danışma ve Destek Hattı</button></a><hr>
+    <a href="tel://113"><button class="btn btn-primary">113 - Alo Doktor</button></a><hr>
+    <a href="tel://189"><button class="btn btn-primary">189 - Vergi Danışma</button></a><hr>
+    <h1>Diğer numaralar</h1>
+    <a href="tel://118"><button class="btn btn-primary">118 - Bilinmeyen Numaralar</button></a><hr>
+    <a href="tel://163"><button class="btn btn-primary">163 - Telefon Borcu</button></a><hr>
+    <a href="tel://135"><button class="btn btn-primary">135 - Uyandırma</button></a><hr>
+    <a href="tel://141"><button class="btn btn-primary">141 - Fonotel</button></a><hr>
+        </div>
+    </body>
+</html>
